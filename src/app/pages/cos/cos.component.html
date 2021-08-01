@@ -1,0 +1,44 @@
+<app-navigation></app-navigation>
+
+<section class="features9 cid-sgDnlPdUpf" id="features10-j">
+    <!---->
+    
+    <div class="container">
+        <div class="mbr-section-head">
+            <h3 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+                <strong>Cos de cumparaturi</strong></h3>
+            
+        </div>
+        <div class="row mt-4">
+            <div class="card col-12" *ngFor="let product of products">
+                <div class="card-wrapper">
+                    <div class="top-line row">
+                        <div class="col">
+                            <h4 class="card-title mbr-fonts-style display-5"><strong>{{product.name}}</strong></h4>
+                        </div>
+                        <div class="col-auto">
+                            <p class="price mbr-fonts-style display-5">{{product.pret}}</p>
+                        </div>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">{{product.descriere}}</p>
+                    </div>
+                    <div class="bottom-line">
+                        <p class="mbr-text mbr-fonts-style display-7">Qty: {{product.bucati}}</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card col-12">
+                <div class="card-wrapper">
+                <div class="row top-line">
+                    <div class="col"><h2><strong>Total</strong></h2></div>
+                    <div class="col-auto"><h1><span class="badge badge-danger">{{total}}</span></h1>
+                    <button type="button" class="btn btn-warning" (click)="checkout()">Checkout</button></div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/i" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;">Build a free site with <a href="https://mobirise.site/z" style="color:#aaa;">Mobirise</a></p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
+  

@@ -1,0 +1,61 @@
+
+  <section class="menu menu3 cid-sgD4skfxXw" once="menu" id="menu3-0">
+    
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a (click)="goToGlammy()">
+
+                        <img src="assets/images/55633888-390263088462151-7992124738384166912-n-1.png" alt="" style="height: 3.1rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-danger text-primary display-5" (click)="goToGlammy()">Glammy</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item dropdown" [ngClass]="{'open':femeiOpen}" (mouseenter)=OpenFemei() (mouseleave)=CloseFemei()>
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Femei</a>
+                        <div class="dropdown-menu">
+                            <a class="text-black dropdown-item text-primary display-4"  (click)="goToAccesoriiF()">Accesorii</a>
+                            <a class="text-black dropdown-item text-primary display-4" (click)="goToCosmeticeF()">Cosmetice</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" [ngClass]="{'open':barbatiOpen}" (mouseenter)=OpenBarbati() (mouseleave)=CloseBarbati()>
+                        <a class="nav-link link text-black dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">Barbati</a>
+                            <div class="dropdown-menu">
+                                <a class="text-black dropdown-item text-primary display-4" (click)="goToAccesoriiB()">Accesorii</a>
+                                <a class="text-black dropdown-item text-primary display-4" (click)="goToIncaltaminteB()">Incaltaminte</a>
+                            </div>
+                        </li>
+                    <li class="nav-item">
+                        <a [hidden]="loggedIn" class="nav-link link text-black text-primary display-4" (click)="goToCont()">
+                            <span class="mobi-mbri mobi-mbri-user-2 mbr-iconfont mbr-iconfont-btn"></span>Cont</a>
+                        <a [hidden]="!loggedIn" class="nav-link link text-black text-primary display-4" (click)="logout()">
+                            <span class="mobi-mbri mobi-mbri-user-2 mbr-iconfont mbr-iconfont-btn"></span>Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-black text-primary display-4" (click)="goToCos()">
+                            <span class="mobi-mbri mobi-mbri-shopping-cart mbr-iconfont mbr-iconfont-btn"></span>Cos</a>
+                    </li></ul>
+                <div class="icons-menu">
+                    <a class="iconfont-wrapper" href="https://facebook.com" target="_blank">
+                        <span class="p-2 mbr-iconfont socicon-facebook socicon"></span>
+                    </a>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+</section>
